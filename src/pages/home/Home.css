@@ -1,0 +1,8 @@
+.body-home {
+  background-image: url('https://www.infodefensa.com/images/showid/5159994');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
+  padding-top: 60px; /* Ajusta el espacio para el header */
+}

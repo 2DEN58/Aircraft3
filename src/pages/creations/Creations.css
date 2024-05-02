@@ -1,0 +1,77 @@
+/* Estilos generales para la página Creations */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Estilos para la imagen de fondo */
+.background-image {
+  background-image: url('https://jundroo.blob.core.windows.net/simpleplanes/GameData/aircraft/1319/04K7qr-UserView-0.jpg');
+  background-size: cover; /* Ajuste automático del tamaño para cubrir */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+
+/* Estilos para los contenedores de las imágenes */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Espaciado uniforme entre contenedores */
+  margin-top: 20px; /* Distanciamiento desde el header */
+}
+
+.image-card {
+  background-color: white; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-bottom: 20px; /* Espacio entre cada tarjeta */
+  width: calc(45% - 20px); /* Ancho del contenedor (45% del ancho menos el margen) */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para las imágenes */
+.image {
+  max-width: 100%; /* Máximo ancho */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para el nombre del avión */
+.aircraft-name {
+  font-size: 18px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Estilos para el nombre del autor */
+.author-name {
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  color: #666; /* Color gris para el autor */
+}
+
+
+
+
+

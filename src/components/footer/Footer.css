@@ -1,0 +1,26 @@
+.footer-container {
+  background-color: #333; /* Color de fondo del footer */
+  padding: 10px 20px; /* Espaciado interno del footer */
+  display: flex;
+  flex-wrap: wrap; /* Permite que los enlaces se envuelvan en pantallas pequeñas */
+  justify-content: center; /* Alinea los elementos al centro horizontalmente */
+}
+
+.footer-link {
+  color: white; /* Color del texto de enlace */
+  text-decoration: none;
+  font-weight: bold; /* Fuente en negrita */
+  margin: 10px 20px; /* Ajusta el margen vertical y horizontal */
+  transition: color 0.3s ease-in-out; /* Transición suave para el color */
+}
+
+.footer-link:hover {
+  color: #007bff; /* Color del texto de enlace al pasar el cursor */
+}
+
+/* Estilo para el footer en pantallas pequeñas */
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 20px; /* Aumenta el espaciado interno */
+  }
+}

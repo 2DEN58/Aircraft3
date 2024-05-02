@@ -1,0 +1,39 @@
+.header-container {
+  background-color: #333; /* Color de fondo del header */
+  padding: 10px 20px; /* Espaciado interno del header */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Alinea los elementos al centro horizontalmente */
+}
+
+.nav-link {
+  color: white; /* Color del texto de enlace */
+  text-decoration: none;
+  font-weight: bold; /* Fuente en negrita */
+  margin: 0 20px; /* Ajusta el margen para alejarlos del centro */
+  transition: color 0.3s ease-in-out; /* Transición suave para el color */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Color del texto de enlace al pasar el cursor */
+}
+
+/* Estilo para el menú en pantallas pequeñas */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Alinea los elementos al centro */
+    padding: 20px; /* Aumenta el espaciado interno */
+  }
+
+  .nav-link {
+    margin: 10px 20px; /* Ajusta el margen vertical entre enlaces */
+  }
+}
+
+
+
+
+
+
+
