@@ -7,6 +7,7 @@ function Footer(){
       <a href="https://www.simpleplanes.com/" className="footer-link">Simpleplanes</a>
       <a href="https://warthunder.com/" className="footer-link">War Thunder</a>
       <a href="https://twitter.com/" className="footer-link">Twitter</a>
+      <a href="/feeds" className="footer-link">RSS Aviation</a>
     </div>
   );
 }

@@ -71,6 +71,32 @@ function RealAircrafts() {
     setFilteredAircrafts(filtered);
   };
 
+  // Función para borrar un avión por su clave
+  const deleteAircraft = (keyToDelete) => {
+    const updatedAircrafts = aircrafts.filter((aircraft) => aircraft.key !== keyToDelete);
+    setAircrafts(updatedAircrafts);
+    setFilteredAircrafts(updatedAircrafts);
+  };
+
+  // Función para actualizar los datos de un avión
+  const updateAircraft = (keyToUpdate, newData) => {
+    const updatedAircrafts = aircrafts.map((aircraft) => {
+      if (aircraft.key === keyToUpdate) {
+        return { ...aircraft, ...newData };
+      }
+      return aircraft;
+    });
+    setAircrafts(updatedAircrafts);
+    setFilteredAircrafts(updatedAircrafts);
+  };
+
+  // Función para insertar un nuevo avión
+  const insertAircraft = (newAircraftData) => {
+    const updatedAircrafts = [...aircrafts, newAircraftData];
+    setAircrafts(updatedAircrafts);
+    setFilteredAircrafts(updatedAircrafts);
+  };
+
   return (
     <>
       <Header />
@@ -102,6 +128,7 @@ function RealAircrafts() {
               <th>Name</th>
               <th>Role</th>
               <th>Price</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -111,6 +138,10 @@ function RealAircrafts() {
                 <td>{a.name}</td>
                 <td>{a.role}</td>
                 <td>${a.price}</td>
+                <td>
+                  <button onClick={() => deleteAircraft(a.key)}>Delete</button>
+                  <button onClick={() => updateAircraft(a.key, { name: 'New Name' })}>Update</button>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -122,4 +153,5 @@ function RealAircrafts() {
 }
 
 export default RealAircrafts;
+
 
